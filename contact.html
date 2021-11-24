@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creative portfolio</title>
+    <link rel="stylesheet" href="bs4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css/all.css" />
+    <link rel="stylesheet" href="./css/css/index_style.css" />
+    <link rel="stylesheet" href="./connexion.css" />
+</head>
+<body>
+
+     <div class="container-fluid bg-light shadow-sm" id="Porfolio">
+        <div class="container">
+            <div class="row py-2">
+                <div class="phone-email col-9 col-md-8 mr-md-auto">
+                  <span class="mr-5"><i class="far fa-envelope mr-2"></i>errachidya.bts@gmail.com</span>
+                  <span><i class="fas fa-mobile-alt mr-2"></i>+212 587321429</span>
+                </div>
+                <div class="social-media col-3 col-lg-2 d-flex justify-content-between">  
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="far fa-user"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <div class="container-fluid bg-white mt-1 position-relative nav-bar-top">
+     <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg w-100">
+                <a class="navbar-brand logo" href="#Porfolio"><img src="iamges/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                      <a class="nav-link px-2" href="index.html">Acceuil<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-2" href="index.html#filiere">Filiéres</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-2" href="index.html#info">Informations </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-2" href="contact.php">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-2" href="connexion.php">Connexion</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link px-2" href="#Contact">contact</a>
+                      </li> -->
+                  </ul>
+                </div>
+              </nav>
+          </div>
+     </div>
+    </div>
+     <div class="container w-50 mt-3 d-flex justify-content-center contact align-items-center" style="height: 75vh;">
+        <form action="/action_page.php" class="w-75 border p-2 shadow-sm mt-3">
+            <h5>Contactez Nous</h5>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nom et prénom" id="pwd">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" autocomplete="off" placeholder="email" id="email">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" autocomplete="off" placeholder="téléphone..." id="email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Entrerz votre message"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Envoyé</button>
+          </form>
+     </div>
+
+
+    <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

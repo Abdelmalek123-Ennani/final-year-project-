@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS</title>
+    <link rel="stylesheet" href="includes/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css" media="screen">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+</head>
+<body>
+    <hr>
+    <div class="social">
+        <div class="row">
+            <div class="col">
+                <i href="#" class="icon fa fa-facebook-square"></i>
+                <i href="#" class="icon fa fa-whatsapp"></i>
+                <i href="#" class="icon fa fa-linkedin"></i>
+                <i href="#" class="icon fa fa-twitter-square"></i>
+                <i href="#" class="icon fa fa-google-plus-square"></i>
+                <i href="#" class="icon fa fa-rss-square"></i>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="row">
+            <div class="col-md-8 logo"><img src="images/logo.png" width="150px" height="100px" alt="logo"></div>
+            <div class="navigation">
+                    <a href="dashboard.php">Connexion</a> | 
+                    <a  href="dashboard.php">S'inscrire</a> | 
+                    <a  href="connexion.php">Admin</a> | 
+                    <a  href="dashboard.php">Archive</a>
+            </div>
+        </div>
+    </div>
+    <div>
+          <div>
+            <i class=" fa fa-bars" id="menu" onclick="openMenu()"></i>
+            <i class="famenu fa fa-times" id="close" onclick="closeMenu()"></i>
+          </div>
+        <nav id="ul" class="navbar navbar-expand-md">
+            <div  >
+            <ul class="navbar-nav nav-tabs" >
+              <li class="nav-item">
+                <a class="nav-link" href="Index.php">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FILIERES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ACTUALITES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.php">STATESTIQUES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item dropdown sp">
+                <a class="dropbtn nav-link dropdown-toggle " href="#">IMPRIMES</a>
+                <div class="dropdown-content">
+                  <a href="#">Attestations</a>
+                  <a href="#">Demmandes</a>
+                  <a href="#">Autres</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+            
+        </nav>
+            <div class="searche">
+                <form class="form-inline my-2 my-lg-0">
+                    <input type="text" placeholder="Chercher" name="Search">
+              </form>
+            </div>
+    </div>
+    <!-- __________________________Carousel____________________________ -->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img src="images/c1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides1">
+        <img src="images/c2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides1">
+        <img src="images/c3.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+<script>
+      var slideIndex = [1,1];
+      var slideId = ["mySlides1", "mySlides2"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+      }
+      function openMenu()
+      {
+        document.getElementById("ul").style.display="block";
+        document.getElementById("menu").style.display="none";
+        document.getElementById("close").style.display="block";
+      }
+      function closeMenu()
+      {
+        document.getElementById("ul").style.display="none";
+        document.getElementById("menu").style.display="block";
+        document.getElementById("close").style.display="none";
+      }
+</script>
+    <script src="js/js/bootstrap.min.js"></script>
+    <script src="js/js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
