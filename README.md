@@ -1,5 +1,5 @@
 ### my final year project
-A school system built using Php as a language of backend and other technologies such as Javascript/html/css/sass..
+A school system built using PHP as backend language and other languages/technologies such as Javascript/html/css/sass/ChartJs/Bootstrap..
 
 
 ### how to install the database ? 
